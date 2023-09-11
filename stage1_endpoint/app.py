@@ -17,7 +17,7 @@ def index():
 
     # GitHub file URL and repo URL
     github_file_url = 'https://github.com/Nenchin/zuri_internship/blob/master/stage1_endpoint/app.py'
-    github_repo_url = 'https://github.com/Nenchin/zuri_intern'
+    github_repo_url = 'https://github.com/Nenchin/zuri_internship/tree/master/stage1_endpoint'
 
     # the response JSON object
     response = {
