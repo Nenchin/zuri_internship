@@ -13,7 +13,7 @@ def index():
     current_day = datetime.datetime.now().strftime('%A')
 
     # the current UTC time (accurate within +/- 2 minutes)
-    current_time = datetime.datetime.now().strftime('%H:%M:%S')
+    current_time = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
 
     # GitHub file URL and repo URL
     github_file_url = 'https://github.com/Nenchin/zuri_internship/blob/master/stage1_endpoint/app.py'
