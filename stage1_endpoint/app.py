@@ -22,7 +22,7 @@ def index():
     # the response JSON object
     response = {
         'Slack_Name': slack_name,
-        'track': track,
+        'Track': track,
         'current_day': current_day,
         'current_utc_time': current_time,
         'github_file_url': github_file_url,
