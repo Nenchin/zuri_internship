@@ -16,7 +16,7 @@ def index():
     current_time = datetime.datetime.now().strftime('%H:%M:%S')
 
     # GitHub file URL and repo URL
-    github_file_url = 'https://github.com/Nenchin/zuri_intern/stage1_endpoint/blob/main/app.py'
+    github_file_url = 'https://github.com/Nenchin/zuri_internship/blob/master/stage1_endpoint/app.py'
     github_repo_url = 'https://github.com/Nenchin/zuri_intern'
 
     # the response JSON object
