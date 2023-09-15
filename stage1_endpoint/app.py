@@ -3,7 +3,7 @@ from flask import Flask, jsonify, request
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/api', methods=['GET'])
 def index():
     # query request parameters
     slack_name = request.args.get('slack_name')
@@ -13,16 +13,16 @@ def index():
     current_day = datetime.datetime.now().strftime('%A')
 
     # the current UTC time (accurate within +/- 2 minutes)
-    current_time = datetime.datetime.now().strftime('%H:%M:%S')
+    current_time = datetime.datetime.now().strftime('%Y-%m-%dT%H:%M:%SZ')
 
     # GitHub file URL and repo URL
-    github_file_url = 'https://github.com/Nenchin/zuri_intern/stage1_endpoint/blob/main/app.py'
-    github_repo_url = 'https://github.com/Nenchin/zuri_intern'
+    github_file_url = 'https://github.com/Nenchin/zuri_internship/blob/master/stage1_endpoint/app.py'
+    github_repo_url = 'https://github.com/Nenchin/zuri_internship/tree/master/stage1_endpoint'
 
     # the response JSON object
     response = {
         'Slack_Name': slack_name,
-        'track': track,
+        'Track': track,
         'current_day': current_day,
         'current_utc_time': current_time,
         'github_file_url': github_file_url,
@@ -33,4 +33,4 @@ def index():
     return jsonify(response)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=2000)
