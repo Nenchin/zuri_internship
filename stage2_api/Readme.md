@@ -39,8 +39,8 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 
    ```shell
-   git clone https://github.com/yourusername/zuri-task-api.git
-   cd zuri-task-api
+   git clone https://github.com/Nenchin/zuri_internship/tree/master/stage2_api.git
+   cd stage2_api
 
 2. Create a virtual environment and activate it:
     python -m venv venv
@@ -98,15 +98,15 @@ Get user by ID (GET Request)
 curl http://localhost:5000/users/1
 
 Update user by ID (PUT Request)
-curl -X PUT http://localhost:2000/users/1 -H "Content-Type: application/json" -d '{
+curl -X PUT http://localhost:5000/users/1 -H "Content-Type: application/json" -d '{
   "name": "Updated name"
 }'
 
 Delete user by ID (DELETE Request)
-curl -X DELETE http://localhost:2000/users/1
+curl -X DELETE http://localhost:5000/users/1
 
 Create user (POST Request)
-curl -X POST http://localhost:2000/users -H "Content-Type: application/json" -d '{
+curl -X POST http://localhost:5000/users -H "Content-Type: application/json" -d '{
   "name": "John Doe"
 }'
 
